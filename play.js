@@ -3,6 +3,6 @@ const {connect} = require('./client'); //same as----> const connect = require('.
 const {setupInput} = require('./input'); //same as----> const setupInput = require('./input').setupInput;
 
 console.log("Connecting ...");
-connect();
+const conn = connect();
 
-setupInput();
+setupInput(conn);
