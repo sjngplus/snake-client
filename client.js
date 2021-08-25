@@ -12,6 +12,11 @@ const connect = function () {
 
   serverConnectionObject.on('connect', () => {
     console.log("Connection with server established");
+    serverConnectionObject.write('Name: zZZ');
+    // serverConnectionObject.write('Move: up');
+    // serverConnectionObject.write('Move: left');
+    // serverConnectionObject.write('Move: down');
+    // serverConnectionObject.write('Move: right');
   })
 
   serverConnectionObject.on('data', (data) => {
