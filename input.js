@@ -43,6 +43,9 @@ const handleUserInput = function(data) {
   if (data === "l") {
     connection.write('Say: i eat snek?')
   }
+  if (data === "k") {
+    connection.write('Say: soo many sneks')
+  }
   // console.log(data)
 }
 
