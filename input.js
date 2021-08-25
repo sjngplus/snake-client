@@ -31,6 +31,18 @@ const handleUserInput = function(data) {
   if (data === "d") {
     connection.write('Move: d')
   }
+  if (data === "i") {
+    connection.write('Say: Iz my block!!')
+  }
+  if (data === "o") {
+    connection.write('Say: i haz block')
+  }
+  if (data === "p") {
+    connection.write('Say: Nom Nom Nom')
+  }
+  if (data === "l") {
+    connection.write('Say: i eat snek?')
+  }
   // console.log(data)
 }
 
